@@ -25,10 +25,7 @@ def convert_to_HSV_color_space(image):
     returns:
         image(numpy array): array containing the HSV components
     '''
-    # Convert the BRG image to RGB
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-
-    # Convert the RGB image to HSV
     image = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
     return image
 
